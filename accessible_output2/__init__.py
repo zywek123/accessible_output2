@@ -4,6 +4,8 @@ import os
 import types
 from accessible_output2.platform_utils import paths
 
+name = 'accessible_output2'
+
 def load_library(libname, cdll=False):
  if paths.is_frozen():
   libfile = os.path.join(paths.embedded_data_path(), 'accessible_output2', 'lib', libname)

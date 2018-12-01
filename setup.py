@@ -12,14 +12,15 @@ if _system == 'Windows':
 
 __doc__ = 'Library to provide speech and braille output to a variety of different screen readers and other accessibility solutions.',
 
-with open('readme.rst') as readme:
+with open('readme.md') as readme:
  long_description = readme.read()
 
 setup(
  name = 'accessible_output2',
+ url = 'https://github.com/frastlin/accessible_output2',
  author = 'Tyler Spivey',
  author_email = 'tspivey@pcdesk.net',
- version='0.12.dev0',
+ version='0.12',
  description = __doc__,
  long_description = long_description,
  package_dir = {'accessible_output2': 'accessible_output2'},
