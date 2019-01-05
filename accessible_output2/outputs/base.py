@@ -1,4 +1,4 @@
-from accessible_output2 import load_library
+from .. import load_library
 import platform
 
 class OutputError(Exception):

@@ -1,2 +1,2 @@
-import accessible_output2.libloader
-import accessible_output2.platform_utils.paths
+from .. import libloader
+from . import paths

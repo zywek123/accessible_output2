@@ -2,7 +2,7 @@ from __future__ import absolute_import
 import ctypes
 import os
 import types
-from accessible_output2.platform_utils import paths
+from .platform_utils import paths
 
 name = 'accessible_output2'
 

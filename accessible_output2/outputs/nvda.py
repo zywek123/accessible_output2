@@ -2,8 +2,8 @@ from builtins import str
 import os
 import platform
 
-from accessible_output2.platform_utils import paths
-from accessible_output2.libloader import load_library
+from ..platform_utils import paths
+from ..libloader import load_library
 from .base import Output
 
 class NVDA(Output):

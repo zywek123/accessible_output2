@@ -1,4 +1,4 @@
-import accessible_output2
+from ... import accessible_output2
 from .base import Output, OutputError
 
 class Auto(Output):

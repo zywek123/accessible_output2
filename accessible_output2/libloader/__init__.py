@@ -1,4 +1,4 @@
-from accessible_output2.libloader.libloader import *
+from .libloader import *
 
 __version__ = 0.1
 __author__ = 'Christopher Toth <q@q-continuum.net>'

@@ -1,4 +1,4 @@
-from accessible_output2.libloader.com import load_com
+from ..libloader.com import load_com
 from .base import Output
 
 import logging
