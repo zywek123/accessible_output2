@@ -1,6 +1,21 @@
 from setuptools import setup, find_packages
 from platform import system
+from setuptools.command.develop import develop
+from setuptools.command.install import install
+from subprocess import check_call
 
+
+class PostDevelopCommand(develop):
+	"""Post-installation for development mode."""
+	def run(self):
+		check_call("pip install pywin32")
+		develop.run(self)
+
+class PostInstallCommand(install):
+	"""Post-installation for installation mode."""
+	def run(self):
+		check_call("pip install pywin32")
+		install.run(self)
 
 _system = system()
 
@@ -37,4 +52,8 @@ setup(
 'Topic :: Software Development :: Libraries'
 ],
  install_requires = install_requires,
+ cmdclass={
+  'develop': PostDevelopCommand,
+  'install': PostInstallCommand,
+ },
 )
