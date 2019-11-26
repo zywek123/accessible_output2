@@ -15,6 +15,7 @@ if platform.system() == 'Darwin':
  from . import say
 
 if platform.system() == 'Linux':
- from . import e_speak
+ #from . import e_speak
+ from . import speech_dispatcher
 
 from .import auto

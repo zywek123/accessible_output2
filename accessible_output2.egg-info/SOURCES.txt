@@ -28,6 +28,7 @@ accessible_output2/outputs/pc_talker.py
 accessible_output2/outputs/sapi4.py
 accessible_output2/outputs/sapi5.py
 accessible_output2/outputs/say.py
+accessible_output2/outputs/speech_dispatcher.py
 accessible_output2/outputs/system_access.py
 accessible_output2/outputs/voiceover.py
 accessible_output2/outputs/window_eyes.py

@@ -8,13 +8,15 @@ from subprocess import check_call
 class PostDevelopCommand(develop):
 	"""Post-installation for development mode."""
 	def run(self):
-		check_call("pip install pywin32")
+		if system() == "Windows":
+			check_call("pip install pywin32")
 		develop.run(self)
 
 class PostInstallCommand(install):
 	"""Post-installation for installation mode."""
 	def run(self):
-		check_call("pip install pywin32")
+		if system() == "Windows":
+			check_call("pip install pywin32")
 		install.run(self)
 
 _system = system()
